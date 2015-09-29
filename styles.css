@@ -1,0 +1,206 @@
+/*algemeen*/
+body {
+    background-color: aliceblue;
+    font: 85%/1.5 verdana;
+    margin: 0 auto;
+    color: #333;
+    display: flex;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.niet {
+    display: none;
+}
+
+body > header {
+    background-color: #54b2a9;
+    max-width: 100%;
+}
+
+nav > ul {
+    width: 60%;
+    padding: 0;
+    display: block;
+    text-indent: 0;
+    float: left;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    width: 19.5%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+    transition: background 1.5s linear;
+    border-radius: 15px;
+}
+
+nav > ul > li:hover {
+    background: #FFCC00;
+}
+
+nav > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.clearfix {
+    height: 1px;
+    clear: both;
+}
+
+nav + form {
+    float: right;
+    max-width: 20%;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+body > header img {
+    max-height: 45px;
+    float: left;
+    margin-right: 1.5%;
+}
+
+.gutter {
+    padding: 0.8em;
+}
+
+time[datetime]{
+    color:#54b2a9;
+}
+
+section + footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*artikel*/
+body > .container > main {
+    max-width: 40%;
+    padding: 0.8em;
+}
+
+body > .container > section, aside {
+    float: left;
+    max-width: 20%;
+    padding: 0.8em;
+}
+aside {
+    margin-top: 3.5em;
+    background-color: aliceblue;
+}
+
+#sitemap {
+    float: left;
+    max-width: 20%;
+}
+
+#contact {
+    float: none;
+    clear: both;
+}
+
+
+nav{
+    display: inline;
+}
+
+.related > article {
+    display: flex;
+    flex-direction: column;
+}
+
+.related > article > footer {
+    order: 2;
+    background-color: pink;
+}
+
+@media all and (max-width: 690px) {
+  body > header {
+    background: orange;
+    flex-direction: column;
+  }
+}
+
+
+h1 {
+  color: black;
+  font: verdana 50%;
+  text-shadow: -4px 3px 0 #FFCC00;
+}
+
+p {
+    font-family: verdana;
+}
+
+#footer {
+    background-color: #54b2a9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact, #search, #about {
+    background: white;
+    justify-content: space-between;
+}
+
+
+/*formulieren css*/
+/*
+form{
+    border: 0;
+    border-radius: 1em;
+    box-shadow: 0 0 .4em currentColor;
+    padding: 1em;
+    background-color: aliceblue;
+}
+*/
+
+fieldset + fieldset {
+    margin: 2em 0 0;
+}
+legend {
+    padding: 0;
+    font-size: 1.2em;
+    position: absolute;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    border-radius: .3em;
+    box-shadow: inset .1em .1em .2em rgba(0,0,0,.2);
+    appearance: none;
+    border: none;
+    transition: .5s;
+    margin: .3em 0;
+    padding: .2em;
+}
+input:hover {
+    padding: .4em .2em;
+}

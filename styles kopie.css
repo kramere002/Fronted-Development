@@ -1,0 +1,206 @@
+/*algemeen*/
+body {
+    background-color: aliceblue;
+    font: 85%/1.5 verdana;
+    margin: 0 auto;
+    color: #333;
+    display: flex;
+}
+
+.niet {
+    display: none;
+}
+
+h1 {
+  color: black;
+  font: verdana 50%;
+  text-shadow: -4px 3px 0 #FFCC00;
+}
+
+body > header {
+    background-color: #54b2a9;
+    max-width: 100%;
+    height: 5em;
+}
+
+nav > ul {
+    width: 60%;
+    padding: 0;
+    display: block;
+    text-indent: 0;
+    float: left;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    width: 19.5%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+    transition: background 1.5s linear;
+    border-radius: 15px;
+}
+
+nav > ul > li:hover {
+    background: #FFCC00;
+}
+
+nav > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.clearfix {
+    height: 1px;
+    clear: both;
+}
+
+nav + form {
+    float: right;
+    max-width: 20%;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+body > header img {
+    max-height: 45px;
+    float: left;
+    margin-right: 1.5%;
+}
+
+.gutter {
+    padding: 0.8em;
+}
+
+time[datetime]{
+    color:#54b2a9;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main {
+    margin-top: 4.5em;
+    max-width: 51%;
+    padding: 0.8em;
+}
+
+.related {
+    margin-top: 4.5em;
+    max-width: 20%;
+    padding: 0.8em;
+}
+
+aside {
+    max-width: 20%;
+    padding: 0.8em;
+    margin-top: 4.5em;
+    background-color: aliceblue;
+}
+
+section > img:hover {
+    transform: rotate(30deg);
+}
+
+.wrapper + footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.wrapper + footer > section {
+    padding: 0.5em 1em;
+}
+
+/*formulieren */
+form > fieldset {
+    border: 0;
+    border-radius: 1em;
+    padding: 1em;
+    background: #fff;
+    box-shadow: 0 0 .5em -.1em black;
+}
+fieldset + fieldset {
+    margin: 2em 0 0;
+}
+
+legend {
+    font-size: 1.2em;
+    position: relative;
+    text-decoration-line: none;
+    background: #54b2a9;
+    border-radius: .3em;
+    padding: 0.2em 0.5em;
+}
+legend + ol {
+    padding: 2em 0 0;
+    list-style: none;
+}
+
+fieldset > fieldset >legend {
+    border: none;
+    padding: .1em;
+    background: none;
+    padding: 0.2em 0.5em;
+}
+
+fieldset > fieldset {
+    border: 0;
+}
+
+ol > li {
+    background: rgba(0,0,0,.1);
+    padding: .5em;
+    margin: 0;
+}
+
+input[type="text"],input[type="email"], input[type="tel"], textarea{
+    display:block;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: .3em;
+    box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+    appearance: none;
+    border: none;
+    transition: .5s;
+    margin: .3em 0;
+    padding: .2em;
+}
+input:hover {
+    padding: .4em .2em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: block;
+    vertical-align: middle;
+    float: left;
+}
+
+@media all and (max-width: 690px) {
+    body > header {
+    background: orange;
+    }
+}
